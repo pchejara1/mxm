@@ -96,6 +96,9 @@ License: copyright commercial
   --container-pb: 120px;
 }
 
+hr{
+  margin: 0;
+}
 /*
  * typography.scss
  * -----------------------------------------------
@@ -1883,7 +1886,8 @@ Scroll To Top style
   color: #ffffff;
 }
 .btn-style-one.dark-bg {
-  background-color: var(--theme-color2);
+  background-color: #777777;
+  /* background-color: var(--theme-color2); */
 }
 .btn-style-one.dark-bg::before {
   background-color: var(--bg-theme-color1);
@@ -2870,8 +2874,9 @@ Header Style One
   left: 0;
   top: 100%;
   width: 100%;
-  -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 10px 60px rgba(0, 0, 0, 0.15);
+  box-shadow: none;
+  /* -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 10px 60px rgba(0, 0, 0, 0.15); */
 }
 @media (max-width: 991.98px) {
   .header-style-one .header-lower {
@@ -3295,7 +3300,8 @@ Sticky Header
 }
 
 .sticky-header .mobile-nav-toggler {
-  color: var(--theme-color2);
+  color: var(--theme-color1);
+  /* color: var(--theme-color2); */
 }
 
 @media only screen and (min-width: 768px) {
@@ -4367,7 +4373,8 @@ Section Title
   font-size: 80px;
   line-height: 1.2em;
   letter-spacing: -0.04em;
-  color: var(--theme-color2);
+  color: #ffffff;
+  /* color: var(--theme-color2); */
   margin-bottom: 40px;
 }
 @media (max-width: 991.98px) {
@@ -13317,4 +13324,14 @@ Sidebar
 }
 .footer-bottom .footer-links li a:hover {
   color: #FFFFFF;
+}
+
+@media screen and (max-width:600px) {
+  .main-header .header-lower .logo-box {
+    width: 150px;
+  }
+  .page-title .title {
+    margin-top: 30px;
+  }
+  
 }
